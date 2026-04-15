@@ -3,14 +3,18 @@
 using namespace std;
 
 int main() {
-    float x;
+    float x, fungsi;
+    cout << "Masukkan nilai x: "; 
+    cin >> x;
 
     if (x < -2) {
-        cout << x*x - 5*x + 7 << endl;
+       fungsi = x*x - 5*x + 7;
     } else if (x >= -2 && x < 4) {  
-        cout << cos(x) - 2*sin(2*x) << endl;
+       fungsi = cos(x) - 2*sin(2*x);
     } else {
-        cout << pow(4*x, 1/3.0) << endl;
+       fungsi = pow(4*x, 1/3.0);
     }
+
+    cout << "Nilai fungsi: " << fungsi;
     return 0;
 }
